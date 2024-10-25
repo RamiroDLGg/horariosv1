@@ -33,7 +33,7 @@ class AlumnoController extends Controller
         $alumno = Alumno::Paginate(10);
         Alumno::create(['noCtrl'=>$request->noCtrl,
         'nombreAlumno'=>$request->nombreAlumno,'apellidoPaterno'=>$request->apellidoPaterno,
-        'apellidoMaterno'=>$request->apellidoMaterno,'sexo'=>$request->sexo]);
+        'apellidoMaterno'=>$request->apellidoMaterno,'sexo'=>$request->sexo,'email'=>$request->email]);
         return redirect()->route('alumnos.index');
     }
 

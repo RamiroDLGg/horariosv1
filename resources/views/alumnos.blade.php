@@ -112,7 +112,7 @@
                             <li><a class="nav-link text-white" href="{{ route('plazas.index') }}">Plazas</a></li>
                             <li><a class="nav-link text-white" href="{{ route('puestos.index') }}">Puestos</a></li>
                             <li><a class="nav-link text-white" href="{{ route('personal') }}">Personal</a></li>
-                            <li><a class="nav-link text-white" href="{{ route('deptos') }}">Deptos.</a></li>
+                            <li><a class="nav-link text-white" href="{{ route('deptos.index') }}">Deptos.</a></li>
                             <li><a class="nav-link text-white" href="{{ route('carreras') }}">Carreras</a></li>
                             <li><a class="nav-link text-white" href="{{ route('reticulas') }}">Retículas</a></li>
                             <li><a class="nav-link text-white" href="{{ route('materias') }}">Materias</a></li>

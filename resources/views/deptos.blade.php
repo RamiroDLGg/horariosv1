@@ -112,7 +112,7 @@
                             <li><a class="nav-link text-white" href="{{ route('plazas.index') }}">Plazas</a></li>
                             <li><a class="nav-link text-white" href="{{ route('puestos') }}">Puestos</a></li>
                             <li><a class="nav-link text-white" href="{{ route('personal') }}">Personal</a></li>
-                            <li><a class="nav-link text-white" href="{{ route('deptos') }}">Deptos.</a></li>
+                            <li><a class="nav-link text-white" href="{{ route('deptos.index') }}">Deptos.</a></li>
                             <li><a class="nav-link text-white" href="{{ route('carreras') }}">Carreras</a></li>
                             <li><a class="nav-link text-white" href="{{ route('reticulas') }}">Retículas</a></li>
                             <li><a class="nav-link text-white" href="{{ route('materias') }}">Materias</a></li>
@@ -168,9 +168,10 @@
     <!-- Contenedor centrado de bienvenida -->
     <div class="welcome-container">
         <h1>Bienvenido Departamentos</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.</p>
     </div>
-    
+    <div class="container">
+        @yield('contenido2') <!-- Aquí se mostrará el contenido de contenido2 -->
+    </div>  
 </body>
 
 </html>

@@ -17,10 +17,11 @@ class AlumnoFactory extends Factory
     public function definition(): array
     {
         return [
-            'noCtrl' => fake()->randomNumber(8, true),
-            'nombreAlumno' => fake()->name(),
-            'apellidoPaterno' => fake()->lastName(),
-            'apellidoMaterno' => fake()->lastname(),
+            'noCtrl' => fake()->unique()->randomNumber(8, true),
+            'nombreAlumno' => fake()->unique()->name(),
+            'apellidoPaterno' => fake()->unique()->lastName(),
+            'apellidoMaterno' => fake()->unique()->lastname(),
+            'email' => fake()->unique()->email(),
             'sexo' => fake()->randomElement(['M', 'F'])
             
         ];

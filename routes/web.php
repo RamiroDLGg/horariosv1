@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DeptoController;
 use App\Http\Controllers\PlazaController;
 use App\Http\Controllers\AlumnoController;
 use App\Http\Controllers\PuestoController;
@@ -33,6 +34,13 @@ Route::post('/plazas.update/{plaza}', [PlazaController::class, 'update'])->name(
 Route::get('/plazas.show/{plaza}', [PlazaController::class, 'show'])->name('plazas.show');
 Route::get('/plazas/{id}', [PlazaController::class, 'destroy'])->name('plazas.destroy');
 
+Route::get('/deptos.index', [DeptoController::class, 'index'])->name('deptos.index');
+Route::get('/deptos/create', [DeptoController::class, 'create'])->name('deptos.create');
+Route::post('/deptos.store', [DeptoController::class, 'store'])->name('deptos.store');
+Route::get('/deptos.edit/{depto}', [DeptoController::class, 'edit'])->name('deptos.edit');
+Route::post('/deptos.update/{depto}', [DeptoController::class, 'update'])->name('deptos.update');
+Route::get('/deptos.show/{depto}', [DeptoController::class, 'show'])->name('deptos.show');
+Route::get('/deptos/{id}', [DeptoController::class, 'destroy'])->name('deptos.destroy');
 
 Route::get('/', function () {
     return view('plantillainicio');
